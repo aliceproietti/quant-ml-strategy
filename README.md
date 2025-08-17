@@ -15,7 +15,7 @@ To test whether predictive models can generate profitable trading signals on dai
 - Calculates Sharpe Ratio, Max Drawdown and Cumulative Returns
 
 ## Example Output
-Performance of the ML-based long/short strategy compared to a passive SPY buy & hold:
+Performance of the ML-based long/short strategy compared to a passive SPY buy and hold:
 
 ![Backtest Performance](strategy_vs_spy.png)
 
@@ -26,8 +26,8 @@ Performance of the ML-based long/short strategy compared to a passive SPY buy & 
 
 ## What I learned
 - How to engineer predictive features using financial time series
-- Importance of walk-forward / time-series validation in ML trading
-- How to backtest strategies and evaluate Sharpe ratio & drawdowns
+- Importance of time-series validation in ML trading
+- How to backtest strategies and evaluate Sharpe ratio and drawdowns
 
 ---
 
