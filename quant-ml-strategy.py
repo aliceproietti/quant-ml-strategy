@@ -78,7 +78,7 @@ data.iloc[:-prediction_horizon, data.columns.get_loc('PredictedReturn')] = best_
 data['Signal'] = np.where(data['PredictedReturn'] > 0, 1, -1)
 data['StrategyReturn'] = data['Signal'].shift(1) * data['LogReturn']
 
-# Metriche performance 
+# Metric performance 
 cumulative_strategy = np.exp(data['StrategyReturn'].cumsum())
 cumulative_asset = np.exp(data['LogReturn'].cumsum())
 
@@ -99,3 +99,4 @@ plt.ylabel('Cumulative Return')
 plt.title(f'Backtest Strategy vs {ticker}')
 plt.legend()
 plt.show()
+
